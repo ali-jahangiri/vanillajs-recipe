@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-11 col-xl-9 col-lg-9 col-sm-12 m-auto">
+          <div class="search">
+            <h1>Meal</h1>
+            <input
+              id="searchBar"
+              type="text"
+              placeholder="Search for recipes"
+            />
+            <i class="fa fa-search"></i>
+          </div>
+          <!-- faveList -->
+          <div id="fave" class="row">
+            <!-- controler -->
+            <div class="controler">
+              <p>Favorite</p>
+              <i
+                aria-controls="faveItemCon"
+                aria-expanded="true"
+                data-target="#faveItemCon"
+                data-toggle="collapse"
+                class="fas fa-angle-down"
+              ></i>
+            </div>
+            <!-- fave item -->
+            <div id="faveItemCon" class="row mx-5 collapse"></div>
+          </div>
+          <!-- random meal -->
+          <div id="random" class="row mb-5 rounded">
+            <div class="col-md-10 m-auto">
+              <div id="coll" class="row py-4">
+                <div class="col-md-1">
+                  <div class="titel">
+                    <p>Random</p>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img id="imgRandom" class="img-fluid" src="" alt="" />
+                </div>
+                <!-- information -->
+                <div class="col-md-6 m-auto">
+                  <div class="info">
+                    <div class="box">
+                      <p>Name :</p>
+                      <span id="name"></span>
+                    </div>
+                    <div class="box">
+                      <p>Category :</p>
+                      <span id="category"></span>
+                    </div>
+                    <div class="box">
+                      <p>Meal Area :</p>
+                      <span id="area"></span>
+                    </div>
+                  </div>
+                  <div class="detail w-100 d-flex justify-content-end">
+                    <i id="showRec" class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="time-line col-md-12"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
